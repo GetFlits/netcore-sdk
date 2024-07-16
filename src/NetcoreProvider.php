@@ -39,7 +39,7 @@ class NetcoreProvider {
 
     function POST($payload) {
         try {
-            $response = $this->client->request($this->METHOD, [
+            $response = $this->client->request($this->METHOD, "", [
                 'body' => $payload,
             ]);
         } catch (RequestException $ex) {
